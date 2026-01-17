@@ -80,8 +80,8 @@ final class QuotaViewModel {
     /// Quota data per provider per account (email -> QuotaData)
     var providerQuotas: [AIProvider: [String: ProviderQuotaData]] = [:]
     
-    /// Subscription info per account (email -> SubscriptionInfo)
-    var subscriptionInfos: [String: SubscriptionInfo] = [:]
+    /// Subscription info per provider per account (provider -> email -> SubscriptionInfo)
+    var subscriptionInfos: [AIProvider: [String: SubscriptionInfo]] = [:]
     
     /// Antigravity account switcher (for IDE token injection)
     let antigravitySwitcher = AntigravityAccountSwitcher.shared
@@ -1137,9 +1137,11 @@ final class QuotaViewModel {
         providerQuotas[.antigravity] = quotas
         
         // Merge instead of replace to preserve data if API fails
+        var providerInfos = subscriptionInfos[.antigravity] ?? [:]
         for (email, info) in subscriptions {
-            subscriptionInfos[email] = info
+            providerInfos[email] = info
         }
+        subscriptionInfos[.antigravity] = providerInfos
         
         // Detect active account in IDE (reads email directly from database)
         await antigravitySwitcher.detectActiveAccount()
@@ -1152,9 +1154,11 @@ final class QuotaViewModel {
         
         providerQuotas[.antigravity] = quotas
         
+        var providerInfos = subscriptionInfos[.antigravity] ?? [:]
         for (email, info) in subscriptions {
-            subscriptionInfos[email] = info
+            providerInfos[email] = info
         }
+        subscriptionInfos[.antigravity] = providerInfos
         // Note: Don't call detectActiveAccount() here - already set by switch operation
     }
     
