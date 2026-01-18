@@ -8834,25 +8834,25 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Menu Bar Provider Limit Reached"
+            "value" : "Menu Bar Account Limit Reached"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Limite de fournisseurs dans la barre de menus atteinte"
+            "value" : "Limite de comptes dans la barre de menus atteinte"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Đã đạt giới hạn nhà cung cấp trên Menu Bar"
+            "value" : "Đã đạt giới hạn tài khoản trên Menu Bar"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "已达到菜单栏提供商上限"
+            "value" : "已达到菜单栏账户上限"
           }
         }
       }
@@ -8863,25 +8863,25 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You can show up to %d providers in the menu bar."
+            "value" : "You can show up to %d accounts in the menu bar."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vous pouvez afficher jusqu'à %d fournisseurs dans la barre de menus."
+            "value" : "Vous pouvez afficher jusqu'à %d comptes dans la barre de menus."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bạn có thể hiển thị tối đa %d nhà cung cấp trên Menu Bar."
+            "value" : "Bạn có thể hiển thị tối đa %d tài khoản trên Menu Bar."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "菜单栏最多可显示 %d 个提供商。"
+            "value" : "菜单栏最多可显示 %d 个账户。"
           }
         }
       }
@@ -14766,25 +14766,25 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Menu Bar Provider Count"
+            "value" : "Menu Bar Account Count"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nombre de fournisseurs affichés dans la barre de menus"
+            "value" : "Nombre de comptes affichés dans la barre de menus"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Số nhà cung cấp hiển thị trên Menu Bar"
+            "value" : "Số tài khoản hiển thị trên Menu Bar"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "菜单栏显示提供商数量"
+            "value" : "菜单栏显示账户数量"
           }
         }
       }
